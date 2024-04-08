@@ -1,0 +1,26 @@
+/* Tailwind directives */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.tooltip-triangle {
+  content: '';
+  position: absolute;
+  left: 100%;
+  margin-left: -55px; 
+  border-width: 15px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+
+@font-face {
+  font-family: 'CaraphicScript_PERSONAL_USE_ONLY';
+  src: url('./assets/fonts/CaraphicScript_PERSONAL_USE_ONLY') format('otf');
+  /* Add additional font formats if needed, like woff, ttf, etc. */
+}
+
+/* Apply the custom font to an element */
+.script-font {
+  font-family: 'CaraphicScript_PERSONAL_USE_ONLY', sans-serif;
+}
+
