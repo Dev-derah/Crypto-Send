@@ -20,8 +20,8 @@ const DashboardLayout: React.FC<DashboardLayoutProps> = ({
       {showSidebar && <Sidebar />}
 
       <div
-        className={`bg-accent ${
-          showSidebar ? "md:w-[78%]" : "md:w-full"
+        className={`bg-accent w-full min-h-screen ${
+          showSidebar ? " md:ml-[20%] md:w-[80%]" : "md:w-full"
         } md:bg-backgroundGray md:relative`}
       >
         {showHeader && <Header type={headerType} />}

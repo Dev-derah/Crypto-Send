@@ -14,7 +14,6 @@ const useSelectInput = ({ options }: SelectInputHookProps) => {
   const handleSelect = (option: string) => {
     setSelectedOption(option);
     setDropdownVisible(false);
-    console.log(option);
   };
 
   const toggleDropdown = () => {

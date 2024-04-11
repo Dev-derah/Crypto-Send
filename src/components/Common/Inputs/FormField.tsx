@@ -4,7 +4,7 @@ type FormFieldProps = {
   type: string;
   disabled: boolean;
   label?: string;
-  placeholder: string;
+  placeholder?: string;
   value?: string | number;
   optional?: boolean;
   autoFocus?: boolean;

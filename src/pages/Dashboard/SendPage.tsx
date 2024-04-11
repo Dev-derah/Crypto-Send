@@ -59,7 +59,7 @@ const SendPage: React.FC = () => {
 
   return (
     <DashboardLayout showHeader={true} showSidebar={true} headerType="progress">
-      <div className="flex  relative justify-center w-full items-center flex-col gap-4">
+      <div className="flex relative justify-center w-full items-center flex-col gap-4">
         {isFirstStep && (
           <section className="mt-20 flex w-full justify-center gap-x-20">
             <CustomButton

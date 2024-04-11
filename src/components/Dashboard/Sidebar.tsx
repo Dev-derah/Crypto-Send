@@ -3,7 +3,7 @@ import { logo, logout } from "../../assets";
 
 const Sidebar = () => {
   return (
-    <div className="w-[22%] sticky h-screen bg-white">
+    <div className=" hidden w-[22%] fixed h-screen bg-white md:block">
       <div className="flex  py-[15%] w-full items-center justify-center">
         <img src={logo} alt="" />
       </div>

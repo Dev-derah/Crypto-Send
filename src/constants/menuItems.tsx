@@ -15,18 +15,22 @@ const menuItems = [
       {
         icon: overview,
         title: "Overview",
+        path: "/dashboard",
       },
       {
         icon: send,
         title: "send",
+        path: "/send",
       },
       {
         icon: transfer,
         title: "Transfer History",
+        path: "/transfer-history",
       },
       {
         icon: invoice,
         title: "Transfer Invoice",
+        path: "/transfer-Invoice",
       },
     ],
   },
@@ -36,10 +40,7 @@ const menuItems = [
       {
         icon: user,
         title: "Identity",
-      },
-      {
-        icon: user,
-        title: "Identity",
+        path: "/identity-settings",
       },
     ],
   },

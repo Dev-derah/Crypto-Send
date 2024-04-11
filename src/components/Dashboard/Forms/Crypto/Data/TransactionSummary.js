@@ -19,6 +19,7 @@ const transactionSummary = [
       transactionId: "987654321",
     },
     transactionInfo: {
+      transactionId: "987654321",
       amountToSend: {
         value: 500,
         currency: "USD",

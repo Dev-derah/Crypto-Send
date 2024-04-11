@@ -7,5 +7,6 @@ import user from "../assets/Images/Icons/user.svg";
 import arrowright from "../assets/Images/Icons/arrow-right.svg";
 import logout from "../assets/Images/Icons/login.svg";
 import infoCircle from "../assets/Images/Icons/info-circle.svg";
+import qrCode from "../assets/Images/illustrations/qr.svg"
 
-export { logo, overview, send, transfer, invoice, user, arrowright, logout,infoCircle };
+export { logo, overview, send, transfer, invoice, user, arrowright, logout,infoCircle,qrCode };
