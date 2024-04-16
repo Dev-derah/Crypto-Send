@@ -25,7 +25,9 @@ const DashboardLayout: React.FC<DashboardLayoutProps> = ({
         } md:bg-backgroundGray md:relative`}
       >
         {showHeader && <Header type={headerType} />}
+        <section className="py-10 px-4">
         {children}
+        </section>
       </div>
     </div>
   );

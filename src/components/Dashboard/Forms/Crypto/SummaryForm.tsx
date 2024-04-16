@@ -12,7 +12,7 @@ interface SummaryFormProps{
 }
 const SummaryForm: React.FC<SummaryFormProps> = ({amountToPay,next}) => {
   return (
-    <div className=" w-[613px] flex flex-col items-center my-12">
+    <div className=" w-[613px] flex flex-col items-center md:my-12">
       <div className="text-[20px] font-medium my-4">
         <h3>Summary</h3>
       </div>

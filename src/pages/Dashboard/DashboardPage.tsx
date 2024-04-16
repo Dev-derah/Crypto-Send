@@ -21,15 +21,13 @@ const DashboardPage: React.FC = () => {
         <section className="md:flex md:justify-between md:items-center">
           <div>
             <p className="text-lg">
-              Welcome Back,<Username username="johndoe" size="large"/>
+              Welcome Back,
+              <Username username="johndoe" size="large" />
             </p>
           </div>
           <div className="flex gap-4">
             <CustomButton>Generate Invoice</CustomButton>
-            <CustomButton
-              isFilled={true}
-              background="bg-primary"
-            >
+            <CustomButton isFilled={true} background="bg-primary">
               Send Money
             </CustomButton>
           </div>
@@ -57,7 +55,9 @@ const DashboardPage: React.FC = () => {
         <section className="pt-section-padding">
           <div className="flex justify-between">
             <p>Transaction History</p>
-            <a className="underline">See all</a>
+            <a className="underline" href="/transfer-history">
+              See all
+            </a>
           </div>
         </section>
         <section>

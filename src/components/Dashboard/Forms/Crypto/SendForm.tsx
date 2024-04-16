@@ -27,7 +27,7 @@ const SendForm = () => {
   };
 
   return (
-    <div className="w-[500px] h-full flex flex-col items-center">
+    <div className="w-[500px] mt-10  h-full flex flex-col items-center">
       <Card backgroundColor="bg-neutral-3">
         {transactionSummary?.map(({ senderDetails }, index) => (
           <section
@@ -56,6 +56,9 @@ const SendForm = () => {
         ))}
       </Card>
       <div className="w-full space-y-5 my-8 ">
+        <div className="w-full flex justify-center">
+          <img src={qrCode} className="w-32 h-32" />
+        </div>
         <SelectInput
           options={cryptoNetworkOptions}
           selectedOption={selectedCryptoNetwork}
@@ -79,9 +82,7 @@ const SendForm = () => {
           label="Amount to send"
           value={"902.6 USDT"}
         />
-        <div className="w-full flex justify-center">
-          <img src={qrCode} className="w-32 h-32" />
-        </div>
+
         <CustomButton
           background="bg-black"
           isFilled={true}

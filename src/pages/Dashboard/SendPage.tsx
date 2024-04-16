@@ -61,7 +61,7 @@ const SendPage: React.FC = () => {
     <DashboardLayout showHeader={true} showSidebar={true} headerType="progress">
       <div className="flex relative justify-center w-full items-center flex-col gap-4">
         {isFirstStep && (
-          <section className="mt-20 flex w-full justify-center gap-x-20">
+          <section className="mt-10 flex w-full justify-center gap-x-20">
             <CustomButton
               onClickFunction={() => handlePaymentMethodChange("crypto")}
             >
@@ -77,12 +77,12 @@ const SendPage: React.FC = () => {
         {!isFirstStep && (
           <button
             onClick={back}
-            className="underline flex capitalize absolute left-4 cursor-pointer top-20"
+            className="underline hidden capitalize absolute left-4 cursor-pointer top-20 md:flex"
           >
             &lt; Back
           </button>
         )}
-        <section className="flex w-full justify-center mt-10">{step}</section>
+        <section className="flex w-full justify-center">{step}</section>
         {isFirstStep && (
           <PostScript normalText="By checking this box, I acknowledge and agree to the terms and services on behalf of Qoinpal" />
         )}
