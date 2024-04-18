@@ -20,7 +20,7 @@ const AssetFlowGraph: React.FC<AssetFlowGraphProps> = ({ graphData }) => {
         <p className="w-full my-2 text-xs">{month}</p>
         <div
           style={{ height: barHeight }}
-          className="relative w-14 bg-neutral-4  transition-all duration-500 rounded-xl group-hover:bg-secondary group-hover:shadow-secondary group-hover:shadow-lg group-hover:-translate-y-4"
+          className="relative w-6 bg-neutral-4  transition-all duration-500 rounded-xl group-hover:bg-secondary group-hover:shadow-secondary group-hover:shadow-lg group-hover:-translate-y-4 md:w-10 xl:w-14"
         >
           <div className="opacity-0 bg-black rounded-xl text-white py-2 px-4 w-20 text-xs absolute right-1/2 left-1/2 transform -translate-x-1/2 -translate-y-[150%] group-hover:opacity-100 delay-100">
             {assetAmount} <span>USD</span>
@@ -32,7 +32,7 @@ const AssetFlowGraph: React.FC<AssetFlowGraphProps> = ({ graphData }) => {
   };
 
   return (
-    <div className="flex justify-between gap-6 w-full my-section-padding h-64">
+    <div className="flex justify-between w-full my-section-padding h-64 md:gap-4 xl:gap-5">
       {graphData?.map(({ month, percentage, id, assetAmount }) => {
         return createBar(percentage, month, id, assetAmount);
       })}

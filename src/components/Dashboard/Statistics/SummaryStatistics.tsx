@@ -18,10 +18,10 @@ const SummaryStatistics: React.FC<SummaryStatisticsProps> = ({statistics}) => {
     const iconStyles = ["bg-[#F8E8E8]", "bg-[#EBF9FF]", "bg-none"];
 
   return (
-    <div className="flex w-full justify-between mt-section-padding">
+    <div className="flex flex-col gap-6 w-full justify-between mt-section-padding md:grid md:grid-cols-3 md:gap-4">
       {statistics?.map(({ value,statTitle }, index) => {
         return (
-          <div key={index} className="relative w-full">
+          <div key={index} className="relative border w-full rounded-lg p-4 flex justify-between md:block md:border-none">
             <p className="text-xs flex items-center gap-2 uppercase">
               <span className="">
                 <img
@@ -32,10 +32,9 @@ const SummaryStatistics: React.FC<SummaryStatisticsProps> = ({statistics}) => {
               </span>
               {statTitle}
             </p>
-            <p className="font-bold text-xl">{value}</p>
-
+            <p className="text-lg font-bold md:text-xl">{value}</p>
             {index !== statistics.length - 1 && (
-              <div className="absolute right-6 h-full w-[0.5px] top-0 bg-[#BFBFBF]" />
+              <div className=" hidden absolute right-6 h-full w-[0.5px] top-0 bg-[#BFBFBF] lg:block" />
             )}
           </div>
         );

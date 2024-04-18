@@ -21,7 +21,7 @@ const DashboardLayout: React.FC<DashboardLayoutProps> = ({
 
       <div
         className={`bg-accent w-full min-h-screen ${
-          showSidebar ? " md:ml-[20%] md:w-[80%]" : "md:w-full"
+          showSidebar ? " lg:ml-[20%] lg:w-[80%]" : "md:w-full"
         } md:bg-backgroundGray md:relative`}
       >
         {showHeader && <Header type={headerType} />}

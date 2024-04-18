@@ -4,7 +4,7 @@ const transactionsData = [
     description: "Sent fiat #068",
     status: "pending",
     date: "Feb 5, 2023",
-    amount: "$2,500",
+    amount: "$20,500",
     receiptLink: "View Receipt",
   },
   {
