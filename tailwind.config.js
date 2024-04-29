@@ -3,6 +3,10 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      fontFamily: {
+        display: ["red hat display", "sans"],
+        brightFlicks: ["Bright-Flicks", "cursive"],
+      },
       fontSize: {
         xs: "0.625rem",
         sm: "0.75rem",
@@ -13,12 +17,12 @@ export default {
       },
       spacing: {
         "section-padding": "2rem",
-        70:"70%"
+        70: "70%",
       },
       colors: {
-        primary:{
-          DEFAULT:"#CCFB00",
-          800:"#708A00"
+        primary: {
+          DEFAULT: "#CCFB00",
+          800: "#708A00",
         },
         secondary: {
           DEFAULT: "#FF7A00",
@@ -44,6 +48,7 @@ export default {
           7: "#8C8C8C",
           8: "#595959",
         },
+        homeSecondary: "#FAFFE6",
         interactiveGray: "#A8A8A8",
         backgroundGray: "#FAFAFA",
         backgroundElevation: "#CFCFCF",

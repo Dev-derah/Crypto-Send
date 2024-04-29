@@ -3,6 +3,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Bright-Flicks";
+  src: url(./assets//fonts/brightflicks-owz00.otf);
+}
+
 .tooltip-triangle {
   content: '';
   position: absolute;
